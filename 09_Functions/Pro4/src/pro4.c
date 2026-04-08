@@ -9,6 +9,9 @@ int main() {
     printf("Enter an integer: ");
     if ( scanf("%d", &number) != 1) return 1;
 
+    scanf("%d", &number);
+
+
     int result = get_last_3_bits(number);
     
     printf("The first 3 LSBs of %d (decimal value) are: %d\n", number, result);
