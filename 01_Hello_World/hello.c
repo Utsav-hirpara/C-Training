@@ -9,6 +9,5 @@ int main(void)
 	ret = scanf("%d %c", &num, &num2);
 	printf("Ret = %d\n", ret);
 
-
 	return 0;
 }
