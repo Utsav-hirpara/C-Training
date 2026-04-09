@@ -9,7 +9,9 @@ int fun(int n){
     }
     else
     {
-        return 7 + fun(n-2);
+        int x = fun(n -2);
+        printf("X = %d\n", x);
+        return 7 + x;
     }
 }
 
