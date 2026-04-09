@@ -14,6 +14,7 @@ int main(void)
 	printf("Enter the number of bits : ");
 	scanf("%d", &n);
 
+
 	int result = nbit(num, n);
 
 	printf("Result : %d\n", result);
