@@ -5,7 +5,7 @@ int main(void)
 {
     char c[] = "GATE2011";
     char *p = c;
-    printf("%s  \n", p + p[3] - p[1]);
+    printf("%s  \n", p + p[3] - p[1]); // E - A
 
     return 0;
 }
