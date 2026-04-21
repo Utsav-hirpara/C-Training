@@ -1,0 +1,33 @@
+/* Print the row sum and column sum */
+
+#include <stdio.h>
+
+int sumofrow(int *a, int row, int cols);
+
+
+int main(void){
+    int a[5][5] = {{1,2,3,4,5},{15,84,56,23,78},{45,87,12,23,56},{151,848,165,4894,2},{9,5,34,945,25}};
+    
+
+    printf("Size is : %d\n", sizeof(a));
+    int result = sumofrow(a, 5, 5);
+
+    
+    return 0;
+}
+
+int sumofrow(int *a, int row, int cols )
+{
+    printf("Size is : %d\n", sizeof(a));
+    int sum =0;
+    for (int i = 0; i < 5; i++)
+    {
+        for (int j = 0; j < 5; j++)
+        {
+            sum += *(a +(i * cols) + j);  //a[i][j];
+        }
+        printf("Row sum = %d\n", sum);
+        sum = 0;
+    }
+    return sum;
+}
